@@ -251,6 +251,9 @@ void TFT_eSPI::init(void)
 #elif defined (RPI_ILI9486_DRIVER)
     #include "TFT_Drivers/RPI_ILI9486_Init.h"
 
+#elif defined (ILI9488_DRIVER)
+    #include "TFT_Drivers/ILI9488_Init.h"
+
 #endif
 
   spi_end();
@@ -282,6 +285,9 @@ void TFT_eSPI::setRotation(uint8_t m)
 
 #elif defined (RPI_ILI9486_DRIVER)
     #include "TFT_Drivers/RPI_ILI9486_Rotation.h"
+
+#elif defined (ILI9488_DRIVER)
+    #include "TFT_Drivers/ILI9488_Rotation.h"
 
 #endif
 
